@@ -19,7 +19,7 @@ function Navbar() {
                     <li><a href="#" onClick={sidebarFunc}>Home</a></li>
                     <li><a href="#profile" onClick={sidebarFunc}>Profile</a></li>
                     <li><a href="#experience" onClick={sidebarFunc}>Experience</a></li>
-                    <li><a href="#education">Education</a></li>
+                    <li><a href="#education" onClick={sidebarFunc}>Education</a></li>
                     <li><a href="#skills" onClick={sidebarFunc}>Skills</a></li>
                     <li><a href="#" onClick={sidebarFunc}>Contact Me</a></li>
                 </ul>
