@@ -1,4 +1,4 @@
-![Example Image](./final.png)
+![Example Image](./public/final.png)
 
 ## 🔥 Responsive Resume Website
 
