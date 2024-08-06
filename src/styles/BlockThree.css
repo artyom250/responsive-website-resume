@@ -1,0 +1,22 @@
+.det-link {
+    background-color: #ededee;
+    color: #33333b;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    padding: 12.5px 15px;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.det-link:hover {
+    background-color: #e3e3e4;
+}
+
+.det-link i {
+    display: flex;
+}

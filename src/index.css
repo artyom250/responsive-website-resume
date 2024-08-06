@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.App {
+  background-color: #f9f9f9;
+  padding: 25px 100px;
+  min-height: 100vh;
+}
+
+.About {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 720px;
+  padding-bottom: 80px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid #ededee;
+  background-color: #f6f6f6;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.blockHead {
+  font-size: 21px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.blockDesc {
+  color: #77777d;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+@media(max-width: 910px) {
+  .detail {
+    flex-direction: column;
+  }
+
+  .detail .det-date {
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 800px) {
+  nav .contact-link {
+    display: none;
+  }
+
+  nav ul li:last-child {
+    display: block;
+  } 
+
+  nav ul {
+    background-color: white;
+    border: 1px solid #ededee;
+    pointer-events: none;
+    position: absolute;
+    flex-direction: column;
+    box-shadow: 0 6px 12px rgba(29, 29, 38, .04);
+    gap: 0px;
+    opacity: 0;
+    padding: 16px;
+    border-radius: 16px;
+    width: 100%;
+    top: 60.4px;
+    left: 0%;
+    transition: 0.3s;
+    transform: translateY(-25px);
+  }
+
+  .show {
+    pointer-events: all;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  nav ul li a {
+    display: flex;
+    width: 100%;
+  }
+
+  nav ul li:not(:nth-child(1)) {
+    margin-top: 5px;
+  }
+
+  nav {
+    padding: 6px 12px;
+  }
+
+  .toggle {
+    display: flex;
+  }
+
+  .aboutme {
+    grid-template-columns: 1fr;
+  }
+
+  .App {
+    padding: 25px 50px;
+  }
+
+  .Navbar {
+    padding: 0px 50px;
+  }
+
+  .worked-img {
+    gap: 25px;
+  }
+
+  .detail {
+    padding: 0px 30px;
+  }
+}
+
+@media(max-width: 700px) {
+  .block-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 600px) {
+  .study {
+    flex-direction: column;
+  }
+
+  .study .det-date {
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 500px) {
+  .App {
+    padding: 25px 35px;
+  }
+
+  .Navbar {
+    padding: 0px 35px;
+  }
+}
+
+@media(max-width: 420px) {
+  .Hero .heading {
+    font-size: 40px;
+  }
+}

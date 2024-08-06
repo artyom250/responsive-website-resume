@@ -1,0 +1,78 @@
+.AboutMe {
+    margin: auto;
+    max-width: 720px;
+}
+
+.aboutme {
+    display: grid;
+    grid-template-columns: 265px 1fr;
+    grid-gap: 12px;
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.photo img {
+    object-fit: cover;
+    border: 1px solid #ededee;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutdesc {
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid #ededee;
+    border-radius: 16px;
+    padding: 35px 30px;
+}
+
+.aboutdesc.two {
+    margin-top: 12px;
+}
+
+.aboutFlex {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.aboutFlex.det {
+    margin: 20px 0px;
+}
+
+.aboutFlex p {
+    color: #77777d;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.aboutFlex i {
+    display: flex;
+    color: #77777d;
+}
+
+.work-p {
+    color: #77777d;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.worked-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #ededee;
+    gap: 18px;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.worked-img img {
+    filter: invert(50%) sepia(5%) saturate(327%) hue-rotate(201deg) brightness(92%) contrast(95%);
+    width: 100px;
+}

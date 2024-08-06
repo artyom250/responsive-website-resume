@@ -1,0 +1,12 @@
+.study {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.block-details .study:nth-child(2),
+.block-details .study:nth-child(3) {
+    border-top: 1px solid #ededee;
+    padding-top: 35px;
+    margin-top: 35px;
+}

@@ -1,0 +1,130 @@
+.Hero {
+    padding: 155.4px 0px 80px 0px;
+}
+
+.heading {
+    color: #1d1d26;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.heading.email {
+    margin-top: 25px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.desc {
+    color: #77777d;
+    margin: 10px 0px 35px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-links a {
+    background-color: #1d1d26;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12.5px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-links.e-link a {
+    padding: 25px 40px;
+    font-size: 18px;
+}
+
+.hero-links.e-link a i {
+    font-size: 24px;
+}
+
+.hero-links a:nth-child(2) {
+    background-color: #ededee;
+    color: #33333b;
+}
+
+.hero-links a:nth-child(2) i {
+    color: #33333b;
+}
+
+.hero-links a:nth-child(2):hover {
+    background-color: #e3e3e4;
+}
+
+.hero-links a:hover {
+    background-color: #33333b;
+}
+
+.hero-links a i {
+    display: flex;
+    font-size: 16px;
+}
+
+.subhead {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.sub {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ededee;
+    padding: 10px 12px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.subhead p {
+    color: #33333b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dot {
+    background-color: #2ede7f;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.Email {
+    margin: 80px 0px;
+}
+
+.Email img {
+    width: 80px;
+    border-radius: 16px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 18px;
+}
+
+.socials a {
+    color: black;
+    display: flex;
+    filter: invert(50%) sepia(5%) saturate(327%) hue-rotate(201deg) brightness(92%) contrast(95%);
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    filter: none;
+}
