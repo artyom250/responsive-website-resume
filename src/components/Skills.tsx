@@ -1,10 +1,36 @@
 import React from 'react';
+import { useState } from 'react';
 import "../styles/AboutMe.css";
 import "../styles/BlockOne.css";
 import "../styles/BlockFour.css";
 import { BiCheck } from "react-icons/bi";
 
 function Skills() {
+    const [skills] = useState([
+        "Data Analysis",
+        "Machine Learning",
+        "Statistical Modeling",
+        "Data Visualization",
+        "Big Data Analytics",
+        "Predictive Modeling",
+        "Deep Learning",
+        "Data Mining",
+        "Statistical Inference",
+        "Hypothesis Testing",
+        "Data Cleaning"
+    ]);
+
+    const [skills2] = useState([
+        "Strategic Planning",
+        "Business Analysis",
+        "Market Research",
+        "Financial Analysis",
+        "Problem-Solving",
+        "Project Management",
+        "Risk Assessment",
+        "Negotiation Skills"
+    ]);
+
   return (
     <div className='block' id='skills'>
         <div className="aboutdesc">
@@ -19,87 +45,23 @@ function Skills() {
                 <div className='skill-block'>
                     <p className="det-h">Data Science</p>
                     <div className="skill">
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Data Analysis</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Machine Learning</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Statistical Modeling</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Data Visualization</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Big Data Analytics</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Predictive Modeling</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Deep Learning</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Data Mining</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Statistical Inference</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Hypothesis Testing</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Data Cleaning</p>
-                        </div>
+                        {skills.map((skill, index) => (
+                            <div className='det-date' key={index}>
+                                <i><BiCheck /></i>
+                                <p>{skill}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div className='skill-block'>
                     <p className="det-h">Business Consultation</p>
                     <div className="skill">
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Strategic Planning</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Business Analysis</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Market Research</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Financial Analysis</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Problem-Solving</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Project Management</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Risk Assessment</p>
-                        </div>
-                        <div className='det-date'>
-                            <i><BiCheck /></i>
-                            <p>Negotiation Skills</p>
-                        </div>
+                        {skills2.map((skill, index) => (
+                            <div className='det-date' key={index}>
+                                <i><BiCheck /></i>
+                                <p>{skill}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
